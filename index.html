@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <title>calculator</title>
+</head>
+<body>
+   <section class="box mt-5 mx-auto p-2">
+       <input type="text" name="" class="result" id="result">
+       <div class= "d-flex flex-row flex-wrap justify-content-around my-1">
+           <input type="button" value="7" class="global number">
+           <input type="button" value="8" class="global number">
+           <input type="button" value="9" class="global number">
+           <input type="button" value="/" class="global operator">
+       </div>
+       <div class="d-flex flex-row flex-wrap justify-content-around my-1">
+        <input type="button" value="4" class="global number">
+        <input type="button" value="5" class="global number">
+        <input type="button" value="6" class="global number">
+        <input type="button" value="*" class="global operator">
+       </div>
+       <div class="d-flex flex-row flex-wrap justify-content-around my-1">
+        <input type="button" value="1" class="global number">
+        <input type="button" value="2" class="global number">
+        <input type="button" value="3" class="global number">
+        <input type="button" value="-" class="global operator">
+       </div>
+     <div class="d-flex flex-row ">
+        <div class="d-flex flex-column w-75">
+            <div class="d-flex flex-row  w-100">
+                <input type="button" value="0" class="global1 number w-75 p-2 my-1 mx-1 border border-0">
+                <input type="button" value="." class=" global1 number w-25 p-2 my-1 mx-1 border border-0">
+            </div>
+            <div class="d-flex flex-row w-100">
+                <input type="button" value="Del" onclick="deleteHandler()" class=" global1 w-25 p-2 my-1 mx-1 text-white bg-danger border border-0">
+                <input type="button" value="=" onclick="finalResult()" class=" global1 w-75 p-2 my-1 mx-1 text-white bg-success border border-0"">
+            </div>
+        </div>
+        <div class="w-25 my-1 mx-1">
+            <input type="button" value="+" class="global1 operator plus border border-0 w-100">
+        </div>
+
+     </div>
+   </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
